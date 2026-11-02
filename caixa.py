@@ -12,8 +12,8 @@ pagamento = input("Forma de Pagamento: ")
 
 total = quantidade * preco
 
-print(produto, type(produto))
-print(quantidade, type(quantidade))
-print(preco, type(preco))
-print(pagamento, type(pagamento))
+venda_grande = total > Decimal(50)
+pagou_pix = pagamento == "pix"
+
 print(f"A quantidade de {quantidade} X o preço de {preco} = ao total de {total}")
+print(f"O total passou de 50: {venda_grande} e a forma de pagamento foi PIX: {pagou_pix}")
