@@ -17,3 +17,11 @@ pagou_pix = pagamento == "pix"
 
 print(f"A quantidade de {quantidade} X o preço de {preco} = ao total de {total}")
 print(f"O total passou de 50: {venda_grande} e a forma de pagamento foi PIX: {pagou_pix}")
+
+if venda_grande:
+    print("Venda grande: ofereça 5% de desconto na próxima compra")
+
+if pagou_pix:
+    print("PIX: confira o comprovante no celular")
+else:
+    print("Confira o valor na maquininha ou no troco")
