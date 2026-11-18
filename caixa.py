@@ -25,3 +25,10 @@ if pagou_pix:
     print("PIX: confira o comprovante no celular")
 else:
     print("Confira o valor na maquininha ou no troco")
+
+if total >= Decimal(101):
+    print("cliente premium")
+elif total <= Decimal(50):
+    print("cliente comum")
+else:
+    print("cliente master")
